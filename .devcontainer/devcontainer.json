@@ -1,0 +1,41 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "bloodworm",
+	// Build locally so the container does not depend on fetching Features from GHCR.
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"postCreateCommand": "",
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Use the default non-root devcontainer user.
+	"remoteUser": "vscode",
+	"containerUser": "vscode",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"mounts": [
+		"source=vscode-home-bloodworm,target=/home/vscode,type=volume"
+	],
+	"runArgs": [
+		"--init",
+		"--ipc=host",
+		"--security-opt=seccomp=unconfined",
+		"--security-opt=apparmor=unconfined"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"openai.chatgpt",
+				"bierner.markdown-mermaid",
+				"mechatroner.rainbow-csv",
+				"ms-vscode.cpptools",
+				"ms-azuretools.vscode-containers",
+				"ms-azuretools.vscode-docker",
+				"redhat.vscode-yaml",
+				"github.vscode-github-actions"
+			]
+		}
+	}
+}

@@ -1,0 +1,9 @@
+# Godot 4 editor/runtime state
+.godot/
+
+# Local Codex/session helper file
+.codex
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
