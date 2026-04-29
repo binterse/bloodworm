@@ -2,6 +2,17 @@
 
 A playable Snake game in Godot where the "apples" are tiny people. Humans panic-run around, can be chased by a rare chainsaw maniac, and get crushed by the snake.
 
+## Project Context
+This project is part of a hands-on AI workshop led by `binterse` together with `Per`, `Erik`, and `Jonas`.
+
+The workshop focuses on learning how to work productively with AI tools in a real software project: shaping ideas into features, iterating on implementation, validating behavior with tests, and maintaining a clear technical handoff for future contributors.
+
+## Open Source License
+This project is open source under the Apache License 2.0.
+
+- License file: [LICENSE](/workspaces/bloodworm/LICENSE)
+- SPDX identifier: `Apache-2.0`
+
 ## Original User Instructions (for AI handoff)
 - Make a snake game in Godot.
 - Apples are small people that get crushed when the snake goes over them.
